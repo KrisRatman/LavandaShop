@@ -1,0 +1,483 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Лаванда — магазин цветов в Тюмени</title>
+  <meta name="description" content="Авторские букеты из свежих цветов с доставкой по Тюмени за 2 часа. Фото букета перед отправкой, бережная упаковка.">
+  <meta name="theme-color" content="#3f3157">
+  <link rel="icon" href="img/logo-mark.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@500;600;700;800&family=Marck+Script&family=Noto+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- SVG-иконки -->
+<svg xmlns="http://www.w3.org/2000/svg" class="hidden">
+  <defs>
+    <symbol id="i-clock" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></symbol>
+    <symbol id="i-pin" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></symbol>
+    <symbol id="i-phone" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8.1 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2Z"/></symbol>
+    <symbol id="i-search" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></symbol>
+    <symbol id="i-heart" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M19 14c1.5-1.5 3-3.2 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.8 0-3 .5-4.5 2-1.5-1.5-2.7-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4 3 5.5l7 7Z"/></symbol>
+    <symbol id="i-bag" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3.5" y="5" width="17" height="15" rx="2.5"/><path d="M3.5 9h17"/><path d="M15.5 12.5a3.5 3.5 0 0 1-7 0"/></symbol>
+    <symbol id="i-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></symbol>
+    <symbol id="i-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></symbol>
+    <symbol id="i-gift" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="8" width="18" height="4" rx="1"/><path d="M12 8v13M19 12v7a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2v-7M7.5 8a2.5 2.5 0 0 1 0-5C10 3 12 8 12 8s2-5 4.5-5a2.5 2.5 0 0 1 0 5"/></symbol>
+    <symbol id="i-truck" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M14 17V6a1 1 0 0 0-1-1H3a1 1 0 0 0-1 1v10a1 1 0 0 0 1 1h1M15 17H9M19 17h2a1 1 0 0 0 1-1v-3.6a1 1 0 0 0-.2-.6l-3.5-4.4A1 1 0 0 0 17.5 7H14"/><circle cx="17" cy="17" r="2"/><circle cx="7" cy="17" r="2"/></symbol>
+    <symbol id="i-camera" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M14.5 4h-5L7 7H4a2 2 0 0 0-2 2v9a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2h-3Z"/><circle cx="12" cy="13" r="3"/></symbol>
+    <symbol id="i-box" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M21 8a2 2 0 0 0-1-1.7l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.7l7 4a2 2 0 0 0 2 0l7-4a2 2 0 0 0 1-1.7Z"/><path d="m3.3 7 8.7 5 8.7-5M12 22V12M7.5 4.3l9 5.1"/></symbol>
+    <symbol id="i-card" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="5" width="20" height="14" rx="2"/><path d="M2 10h20"/></symbol>
+    <symbol id="i-calendar" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2.5"/><path d="M16 2v4M8 2v4M3 10h18"/></symbol>
+    <symbol id="i-check" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="m5 12.5 4.5 4.5L19 7.5"/></symbol>
+    <symbol id="i-star" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"><path d="m12 2.8 2.8 5.8 6.3.9-4.6 4.4 1.1 6.3L12 17.2l-5.6 3 1.1-6.3-4.6-4.4 6.3-.9Z"/></symbol>
+    <symbol id="i-mail" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-10 6L2 7"/></symbol>
+    <symbol id="i-instagram" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r=".6" fill="currentColor"/></symbol>
+    <symbol id="i-telegram" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="m22 2-7 20-4-9-9-4Z"/><path d="M22 2 11 13"/></symbol>
+    <symbol id="i-vk" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M2.5 7c.7 5.6 4 10 9.5 10v-4c2 .3 3.5 1.8 4.4 4h4.1c-.9-3-3-5-4.8-5.9 1.8-1 3.5-3 4.1-4.1h-3.8c-.8 1.8-2.3 3.4-3.9 3.6V7H8.4v7c-1.7-.5-3.6-2.6-3.8-7Z"/></symbol>
+    <symbol id="i-chat" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M7.9 20A9 9 0 1 0 4 16.1L2 22Z"/></symbol>
+    <symbol id="i-menu" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></symbol>
+    <symbol id="i-close" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M6 6l12 12M18 6 6 18"/></symbol>
+  </defs>
+</svg>
+
+<!-- ============ Верхняя полоса ============ -->
+<div class="bg-plum text-[12px] text-[#d9d2e5] sm:text-[13px]">
+  <div class="container-x flex h-11 items-center justify-between gap-4">
+    <div class="flex items-center gap-6">
+      <span class="flex items-center gap-2">
+        <svg class="h-4 w-4"><use href="#i-clock"/></svg>
+        <span>Пн-Пт&nbsp; 9:00 – 20:00<span class="hidden sm:inline">&nbsp; / &nbsp;Сб-Вс&nbsp; 10:00 – 19:00</span></span>
+      </span>
+      <span class="hidden items-center gap-2 md:flex">
+        <svg class="h-4 w-4"><use href="#i-pin"/></svg>Доставка по всей Тюмени
+      </span>
+    </div>
+    <div class="flex items-center gap-5">
+      <a href="tel:+79223988968" class="flex items-center gap-2 font-display font-bold text-white hover:text-lav-100">
+        <svg class="h-4 w-4"><use href="#i-phone"/></svg>+7 (922) 398-89-68
+      </a>
+      <span class="hidden h-5 w-px bg-white/20 lg:block"></span>
+      <span class="hidden lg:block">ул. Достоевского, 18 этаж 1</span>
+    </div>
+  </div>
+</div>
+
+<!-- ============ Шапка ============ -->
+<header id="top" class="sticky top-0 z-40 border-b border-lav-200 bg-white/95 backdrop-blur">
+  <div class="container-x flex h-16 items-center justify-between gap-4 lg:h-[88px]">
+    <a href="#top" class="flex shrink-0 items-center gap-3" aria-label="Лаванда — магазин цветов">
+      <img src="img/logo-mark.png" alt="" class="h-10 w-10 rounded-full lg:h-[52px] lg:w-[52px]">
+      <span class="leading-none">
+        <span class="block font-script text-[28px] leading-[1.1] text-plum lg:text-[34px]">Лаванда</span>
+        <span class="mt-0.5 block pl-0.5 text-[10px] tracking-[0.18em] text-soft lg:text-[11px]">магазин цветов</span>
+      </span>
+    </a>
+
+    <nav class="hidden items-center gap-7 text-[15px] text-muted xl:gap-8 lg:flex" aria-label="Основное меню">
+      <a href="#catalog" class="font-medium text-plum">Каталог</a>
+      <a href="#boxes" class="transition hover:text-plum">Композиции</a>
+      <a href="#boxes" class="transition hover:text-plum">Подарки</a>
+      <a href="#why" class="transition hover:text-plum">Доставка</a>
+      <a href="#reviews" class="transition hover:text-plum">Отзывы</a>
+      <a href="#footer" class="transition hover:text-plum">Контакты</a>
+    </nav>
+
+    <div class="flex items-center gap-2 sm:gap-3">
+      <button type="button" class="icon-btn hidden sm:grid" aria-label="Поиск" id="searchBtn" aria-expanded="false"><svg class="h-[18px] w-[18px]"><use href="#i-search"/></svg></button>
+      <button type="button" class="icon-btn relative" aria-label="Избранное" id="favBtn">
+        <svg class="h-[18px] w-[18px] fill-none"><use href="#i-heart"/></svg>
+        <span id="favCount" class="absolute -right-1 -top-1 hidden h-[18px] min-w-[18px] place-items-center rounded-full bg-rose px-1 font-display text-[10px] font-bold text-white">0</span>
+      </button>
+      <button type="button" class="flex h-[42px] items-center gap-2 rounded-xl bg-lav-50 px-3 text-plum transition hover:bg-lav-100 sm:px-4" aria-label="Корзина" id="cartBtn">
+        <svg class="h-[18px] w-[18px]"><use href="#i-bag"/></svg>
+        <span id="cartTotal" class="font-display text-[14px] font-bold">0 ₽</span>
+      </button>
+      <button type="button" class="ml-1 hidden h-11 items-center rounded-full bg-lav px-6 font-display text-[15px] font-semibold text-white transition hover:bg-lav-600 md:inline-flex" data-open="callback" data-title="Подобрать букет">Подобрать букет</button>
+      <button type="button" class="icon-btn lg:hidden" aria-label="Меню" id="menuBtn" aria-expanded="false"><svg class="icon"><use href="#i-menu"/></svg></button>
+    </div>
+  </div>
+
+  <!-- Поиск -->
+  <div id="searchBar" class="hidden border-t border-lav-200 bg-white">
+    <div class="container-x py-3">
+      <label class="relative block">
+        <span class="sr-only">Поиск по каталогу</span>
+        <svg class="pointer-events-none absolute left-4 top-1/2 h-[18px] w-[18px] -translate-y-1/2 text-soft"><use href="#i-search"/></svg>
+        <input id="searchInput" type="search" class="field h-12 pl-11 placeholder:text-soft" placeholder="Найти букет: гортензия, розы, коробка…" autocomplete="off">
+      </label>
+    </div>
+  </div>
+
+  <!-- Мобильное меню -->
+  <div id="mobileMenu" class="hidden border-t border-lav-200 bg-white lg:hidden">
+    <nav class="container-x flex flex-col py-3 text-[16px] text-plum" aria-label="Мобильное меню">
+      <a href="#catalog" class="border-b border-lav-50 py-3 font-medium">Каталог</a>
+      <a href="#boxes" class="border-b border-lav-50 py-3">Композиции</a>
+      <a href="#boxes" class="border-b border-lav-50 py-3">Подарки</a>
+      <a href="#why" class="border-b border-lav-50 py-3">Доставка</a>
+      <a href="#reviews" class="border-b border-lav-50 py-3">Отзывы</a>
+      <a href="#footer" class="py-3">Контакты</a>
+      <button type="button" class="mt-3 h-12 rounded-full bg-lav font-display text-[15px] font-semibold text-white md:hidden" data-open="callback" data-title="Подобрать букет">Подобрать букет</button>
+    </nav>
+  </div>
+</header>
+
+<main>
+
+<!-- ============ Первый экран ============ -->
+<section class="relative overflow-hidden bg-hero">
+  <div class="container-x relative z-10 pb-10 pt-10 sm:pt-16 lg:flex lg:min-h-[840px] lg:items-start lg:pb-0 lg:pt-[200px]">
+    <div class="max-w-[640px] lg:max-w-[46%] xl:max-w-[680px]">
+      <span class="inline-flex h-[34px] items-center gap-2.5 rounded-full border border-white/25 bg-white/15 px-4 text-[12px] text-white sm:text-[13px]">
+        <svg class="h-4 w-4"><use href="#i-truck"/></svg>Соберём и доставим по Тюмени за 2 часа
+      </span>
+      <h1 class="mt-6 text-[38px] font-normal leading-[1.12] tracking-[-0.01em] text-white sm:text-[52px] xl:mt-7 xl:text-[62px]">Букеты, которые говорят за вас</h1>
+      <p class="mt-5 max-w-[540px] text-[16px] leading-[1.7] text-white/80 sm:text-[18px]">Авторские букеты из свежих цветов, фото перед отправкой и бережная упаковка. Выберите букет по поводу и бюджету — флорист соберёт его за 20 минут.</p>
+      <div class="mt-8 flex flex-wrap gap-3 sm:gap-4">
+        <a href="#catalog" class="inline-flex h-14 items-center gap-3 rounded-full bg-white px-8 font-display text-[15px] font-bold text-plum shadow-float transition hover:bg-lav-50">Выбрать букет<svg class="h-[18px] w-[18px]"><use href="#i-arrow"/></svg></a>
+        <button type="button" class="inline-flex h-14 items-center gap-3 rounded-full border border-white/35 bg-white/10 px-7 font-display text-[15px] font-semibold text-white transition hover:bg-white/20" data-open="callback" data-title="Подбор по поводу"><svg class="h-[18px] w-[18px]"><use href="#i-gift"/></svg>Подбор по поводу</button>
+      </div>
+      <ul class="mt-9 flex flex-wrap gap-x-[26px] gap-y-3 text-[13px] text-white/70">
+        <li class="flex items-center gap-2"><svg class="h-4 w-4"><use href="#i-camera"/></svg>Фото букета перед доставкой</li>
+        <li class="flex items-center gap-2"><svg class="h-4 w-4"><use href="#i-box"/></svg>Бесплатно от 1000 ₽</li>
+        <li class="flex items-center gap-2"><svg class="h-4 w-4"><use href="#i-card"/></svg>Оплата онлайн и картой курьеру</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="relative -mt-4 h-[380px] sm:h-[520px] lg:absolute lg:inset-y-0 lg:right-0 lg:mt-0 lg:h-auto lg:w-[50%] xl:w-[47.3%]">
+    <img src="img/hero-bouquet.jpg" alt="Букет с белой гортензией, лавандой и розовой маттиолой" class="hero-fade h-full w-full object-cover object-[left_top] lg:object-left" width="680" height="840" fetchpriority="high">
+  </div>
+
+  <button type="button" class="absolute bottom-6 right-4 z-20 inline-flex h-14 items-center gap-3 rounded-full bg-white px-7 font-display text-[15px] font-semibold text-plum shadow-float transition hover:bg-lav-50 sm:right-6 lg:bottom-[30px] lg:right-[23px]" data-open="callback" data-title="Заказать звонок">
+    <svg class="h-5 w-5 text-lav"><use href="#i-phone"/></svg>Заказать звонок
+  </button>
+</section>
+
+<!-- ============ Авторские букеты ============ -->
+<section id="catalog" class="bg-white py-14 lg:pb-[64px] lg:pt-[90px]">
+  <div class="container-x">
+    <div class="flex flex-col gap-4 sm:flex-row sm:items-end sm:justify-between">
+      <div>
+        <h2 class="section-title">Авторские букеты</h2>
+        <p class="section-sub">240 букетов в наличии. Собираем за 20 минут, доставляем от 2 часов</p>
+      </div>
+      <a href="#catalog" class="link-more shrink-0" data-show-all>Смотреть все букеты<svg class="h-[18px] w-[18px]"><use href="#i-arrow"/></svg></a>
+    </div>
+
+    <div class="no-scrollbar -mx-4 mt-7 flex gap-2.5 overflow-x-auto px-4 pb-1 sm:mx-0 sm:flex-wrap sm:px-0" role="tablist" id="filters">
+      <button type="button" data-filter="all" class="filter-chip is-active">Все букеты</button>
+      <button type="button" data-filter="hit" class="filter-chip">Хиты</button>
+      <button type="button" data-filter="new" class="filter-chip">Новинки</button>
+      <button type="button" data-filter="box" class="filter-chip">Композиции в коробке</button>
+      <button type="button" data-filter="roses" class="filter-chip">Розы</button>
+      <button type="button" data-filter="peony" class="filter-chip">Пионы и пионовидные</button>
+      <button type="button" data-filter="tall" class="filter-chip">Высокие букеты</button>
+    </div>
+
+    <div id="products" class="mt-7 grid grid-cols-2 gap-3 sm:gap-5 lg:grid-cols-4 lg:gap-6"></div>
+    <p id="emptyState" class="hidden py-16 text-center text-muted">В этой категории пока нет букетов — загляните позже или закажите подбор у флориста.</p>
+
+    <div class="mt-8 flex justify-center lg:mt-[30px]">
+      <button type="button" id="moreBtn" class="inline-flex h-12 items-center gap-2.5 rounded-full border border-lav-200 bg-white px-7 font-display text-[14px] font-semibold text-lav transition hover:border-lav hover:bg-lav-50">
+        Показать ещё<svg class="h-4 w-4"><use href="#i-chevron"/></svg>
+      </button>
+    </div>
+  </div>
+</section>
+
+<!-- ============ Новинки и композиции в коробках ============ -->
+<section id="boxes" class="bg-lav-50 py-14 lg:py-[90px]">
+  <div class="container-x">
+    <div class="flex flex-col gap-4 sm:flex-row sm:items-end sm:justify-between">
+      <div>
+        <h2 class="section-title">Новинки и композиции в коробках</h2>
+        <p class="section-sub">Свежие поступления каждый вторник и пятницу — привозим напрямую с плантаций</p>
+      </div>
+      <a href="#catalog" class="link-more shrink-0" data-show-all>Смотреть ещё 24 позиции<svg class="h-[18px] w-[18px]"><use href="#i-arrow"/></svg></a>
+    </div>
+
+    <div class="mt-8 grid gap-6 lg:mt-9 lg:grid-cols-2">
+      <!-- Хит недели -->
+      <article class="relative flex flex-col overflow-hidden rounded-[24px] p-5 text-white sm:p-8 lg:min-h-[560px]"
+               style="background: radial-gradient(120% 70% at 0% 100%, #dcbcd3 0%, rgba(220,188,211,0) 60%), linear-gradient(120deg, #9a7cb8 0%, #7a62a0 50%, #5a477e 100%);">
+        <span class="mt-2 self-start rounded-full bg-white px-3.5 py-1.5 font-display text-[11px] font-bold text-ink sm:mt-8">Хит недели</span>
+        <img src="img/edible.jpg" alt="Съедобный букет из колбас, сыров и овощей в деревянном ящике" class="mt-3 aspect-[524/246] w-full rounded-[20px] object-cover" loading="lazy" width="524" height="246">
+        <h3 class="mt-5 text-[28px] font-normal leading-tight sm:text-[34px]">Съедобные букеты</h3>
+        <p class="mt-2 text-[14px] text-white/55">Съедобные букеты под заказ</p>
+        <div class="mt-6 flex flex-wrap items-center justify-between gap-4 lg:mt-auto">
+          <span class="font-display text-[26px] font-medium sm:text-[28px]">от 3 000₽</span>
+          <button type="button" class="inline-flex h-12 items-center gap-3 rounded-full bg-white px-6 font-display text-[14px] font-semibold text-ink transition hover:bg-lav-50" data-open="callback" data-title="Съедобный букет под заказ">Смотреть композицию<svg class="h-4 w-4"><use href="#i-arrow"/></svg></button>
+        </div>
+      </article>
+
+      <div class="grid gap-6">
+        <article class="flex min-h-[200px] overflow-hidden rounded-[20px] border border-line bg-white sm:min-h-[268px]">
+          <img src="img/box-gypsophila.jpg" alt="Гипсофила в розовой шляпной коробке" class="w-[38%] object-cover" loading="lazy" width="219" height="267">
+          <div class="flex flex-1 flex-col justify-center p-4 sm:px-[26px] sm:py-7">
+            <span class="self-start rounded-full bg-lav-100 px-3 py-1 font-display text-[11px] font-semibold text-lav">Хит</span>
+            <h3 class="mt-2.5 text-[16px] font-medium leading-snug text-ink sm:text-[18px]">Композиция в малой шляпной коробке</h3>
+            <p class="mt-2 text-[13px] text-soft">гипсофилла</p>
+            <div class="mt-5 flex items-center justify-between sm:mt-8">
+              <span class="font-display text-[18px] font-bold text-plum sm:text-[20px]">2 000 ₽</span>
+              <button type="button" class="btn-cart" aria-label="В корзину" data-add="Композиция в малой шляпной коробке" data-price="2000"><svg class="h-[18px] w-[18px]"><use href="#i-bag"/></svg></button>
+            </div>
+          </div>
+        </article>
+        <article class="flex min-h-[200px] overflow-hidden rounded-[20px] border border-line bg-white sm:min-h-[268px]">
+          <img src="img/flask.jpg" alt="Композиция из сухоцветов и хлопка в стеклянной колбе" class="w-[38%] object-cover" loading="lazy" width="219" height="267">
+          <div class="flex flex-1 flex-col justify-center p-4 sm:px-[26px] sm:py-7">
+            <span class="self-start rounded-full bg-lav px-3 py-1 font-display text-[11px] font-semibold text-white">Новинка</span>
+            <h3 class="mt-2.5 text-[16px] font-medium leading-snug text-ink sm:text-[18px]">Композиция</h3>
+            <p class="mt-2 text-[13px] leading-snug text-soft">Композиции с сухоцветами в колбе в наличии и под заказ</p>
+            <div class="mt-4 flex items-center justify-between sm:mt-5">
+              <span class="font-display text-[18px] font-bold text-plum sm:text-[20px]">3 500 ₽</span>
+              <button type="button" class="btn-cart" aria-label="В корзину" data-add="Композиция с сухоцветами в колбе" data-price="3500"><svg class="h-[18px] w-[18px]"><use href="#i-bag"/></svg></button>
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ Преимущества ============ -->
+<section id="why" class="bg-white py-14 lg:py-[90px]">
+  <div class="container-x">
+    <h2 class="section-title">Почему нам доверяют цветы</h2>
+    <p class="section-sub">За 9 лет мы собрали 84 000 букетов и знаем: важна каждая деталь</p>
+    <div class="mt-8 grid gap-4 md:grid-cols-3 lg:mt-11 lg:gap-5">
+      <div class="rounded-[20px] border border-line bg-lav-50 p-6">
+        <span class="grid h-[52px] w-[52px] place-items-center rounded-2xl bg-white text-lav"><svg class="icon"><use href="#i-truck"/></svg></span>
+        <h3 class="mt-6 text-[17px] font-semibold text-ink">Доставка от 2 часов</h3>
+        <p class="mt-3.5 text-[14px] leading-[1.6] text-muted">Курьер приедет в выбранный интервал — сейчас или к нужной дате.</p>
+      </div>
+      <div class="rounded-[20px] border border-line bg-lav-50 p-6">
+        <span class="grid h-[52px] w-[52px] place-items-center rounded-2xl bg-white text-lav"><svg class="icon"><use href="#i-camera"/></svg></span>
+        <h3 class="mt-6 text-[17px] font-semibold text-ink">Фото букета перед отправкой</h3>
+        <p class="mt-3.5 text-[14px] leading-[1.6] text-muted">Отправляем фото готового букета в мессенджер, чтобы вы точно знали, что получит получатель.</p>
+      </div>
+      <div class="rounded-[20px] border border-line bg-lav-50 p-6">
+        <span class="grid h-[52px] w-[52px] place-items-center rounded-2xl bg-white text-lav"><svg class="icon"><use href="#i-box"/></svg></span>
+        <h3 class="mt-6 text-[17px] font-semibold text-ink">Бережная упаковка и аквапак</h3>
+        <p class="mt-3.5 text-[14px] leading-[1.6] text-muted">Цветы едут в защитном чехле с питанием, а открытку с вашим текстом мы подписываем бесплатно.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ Отзывы ============ -->
+<section id="reviews" class="bg-lav-50 py-14 lg:py-[90px]">
+  <div class="container-x">
+    <div class="flex flex-col gap-4 sm:flex-row sm:items-end sm:justify-between">
+      <div>
+        <h2 class="section-title">Отзывы покупателей</h2>
+        <p class="section-sub">19 на Яндекс Картах — средняя оценка 4,7 из 5</p>
+      </div>
+      <div class="inline-flex h-11 shrink-0 items-center gap-3 self-start rounded-full border border-line bg-white px-5 sm:self-auto">
+        <span class="flex gap-0.5 text-star" aria-hidden="true">
+          <svg class="h-4 w-4"><use href="#i-star"/></svg><svg class="h-4 w-4"><use href="#i-star"/></svg><svg class="h-4 w-4"><use href="#i-star"/></svg><svg class="h-4 w-4"><use href="#i-star"/></svg><svg class="h-4 w-4"><use href="#i-star"/></svg>
+        </span>
+        <span class="font-display text-[15px] font-bold text-plum">4,7</span>
+      </div>
+    </div>
+
+    <div class="no-scrollbar -mx-4 mt-8 flex snap-x snap-mandatory scroll-px-4 items-start gap-4 overflow-x-auto px-4 pb-2 md:mx-0 md:grid md:grid-cols-3 md:gap-6 md:overflow-visible md:px-0 md:pb-0 lg:mt-9">
+      <figure class="w-[85%] shrink-0 snap-start rounded-[20px] border border-line bg-white p-6 md:w-auto">
+        <div class="flex gap-0.5 text-star" aria-label="5 из 5"><svg class="h-4 w-4"><use href="#i-star"/></svg><svg class="h-4 w-4"><use href="#i-star"/></svg><svg class="h-4 w-4"><use href="#i-star"/></svg><svg class="h-4 w-4"><use href="#i-star"/></svg><svg class="h-4 w-4"><use href="#i-star"/></svg></div>
+        <blockquote class="mt-5 text-[15px] leading-[1.6] text-ink">«Спасибо большое, написал, проконсультировали, порекомендовали прекрасный букетик сухоцветов.) курьер доставил цветы в срок и очень приятно удивил мою девушку добрыми пожеланиями) еще раз спасибо)»</blockquote>
+        <figcaption class="mt-6 flex items-center gap-3 border-t border-lav-200 pt-[18px]">
+          <span class="grid h-11 w-11 place-items-center rounded-full bg-gradient-to-br from-[#9a7cc8] to-[#6d4fa3] font-display text-[13px] font-bold text-white">IS</span>
+          <span class="font-display text-[14px] font-bold text-ink">Ivan Sushkov</span>
+        </figcaption>
+      </figure>
+      <figure class="w-[85%] shrink-0 snap-start rounded-[20px] border border-line bg-white p-6 md:w-auto">
+        <div class="flex gap-0.5 text-star" aria-label="5 из 5"><svg class="h-4 w-4"><use href="#i-star"/></svg><svg class="h-4 w-4"><use href="#i-star"/></svg><svg class="h-4 w-4"><use href="#i-star"/></svg><svg class="h-4 w-4"><use href="#i-star"/></svg><svg class="h-4 w-4"><use href="#i-star"/></svg></div>
+        <blockquote class="mt-5 text-[15px] leading-[1.6] text-ink">«Очень красиво и уютно, прекрасный персонал, волшебные новогодние интерьерные композиции<br>Заказывали свадебный букет для племянницы. Очень стильный и интересный получился»</blockquote>
+        <figcaption class="mt-6 flex items-center gap-3 border-t border-lav-200 pt-[18px]">
+          <span class="grid h-11 w-11 place-items-center rounded-full bg-gradient-to-br from-[#dca0b6] to-[#b67590] font-display text-[13px] font-bold text-white">ЕК</span>
+          <span class="font-display text-[14px] font-bold text-ink">Елена.К</span>
+        </figcaption>
+      </figure>
+      <figure class="w-[85%] shrink-0 snap-start rounded-[20px] border border-line bg-white p-6 md:w-auto">
+        <div class="flex gap-0.5 text-star" aria-label="5 из 5"><svg class="h-4 w-4"><use href="#i-star"/></svg><svg class="h-4 w-4"><use href="#i-star"/></svg><svg class="h-4 w-4"><use href="#i-star"/></svg><svg class="h-4 w-4"><use href="#i-star"/></svg><svg class="h-4 w-4"><use href="#i-star"/></svg></div>
+        <blockquote class="mt-5 text-[15px] leading-[1.6] text-ink">«Прекрасный салон цветов. Не первый раз обращаюсь и всегда остаюсь доволен приобретенными цветами. Приятный и понимающий персонал. Спасибо Вам большое»</blockquote>
+        <figcaption class="mt-6 flex items-center gap-3 border-t border-lav-200 pt-[18px]">
+          <span class="grid h-11 w-11 place-items-center rounded-full bg-gradient-to-br from-[#b3c4b0] to-[#7f997c] font-display text-[13px] font-bold text-white">ПК</span>
+          <span class="font-display text-[14px] font-bold text-ink">Петр Кустов</span>
+        </figcaption>
+      </figure>
+    </div>
+
+    <a href="https://yandex.ru/maps/" target="_blank" rel="noopener" class="link-more mt-8 lg:mt-12">Все отзывы — на Яндекс Картах и в приложении<svg class="h-[18px] w-[18px]"><use href="#i-arrow"/></svg></a>
+  </div>
+</section>
+
+<!-- ============ Оформление заказа ============ -->
+<section id="order" class="bg-white py-14 lg:py-[90px]">
+  <div class="container-x">
+    <h2 class="section-title">Оформите заказ за 2 минуты</h2>
+    <p class="section-sub">Заполните форму — флорист свяжется с вами в течение 15 минут, подтвердит букет и время доставки</p>
+
+    <div class="mt-8 grid gap-6 lg:mt-10 lg:grid-cols-[600px_1fr] lg:gap-7">
+      <form id="orderForm" class="rounded-[24px] bg-lav-50 p-5 sm:p-8" novalidate>
+        <div class="space-y-5">
+          <div>
+            <label class="field-label" for="f-to">Кому дарим и текст открытки</label>
+            <input id="f-to" name="to" class="field h-[50px]" placeholder="Маме, «С любовью, Аня»" required>
+          </div>
+          <div>
+            <label class="field-label" for="f-date">Дата и интервал доставки</label>
+            <div class="relative">
+              <input id="f-date" name="date" class="field h-[50px] pr-12" placeholder="8 марта, 10:00 – 13:00" required>
+              <svg class="pointer-events-none absolute right-4 top-1/2 h-[18px] w-[18px] -translate-y-1/2 text-soft"><use href="#i-calendar"/></svg>
+            </div>
+          </div>
+          <div>
+            <label class="field-label" for="f-addr">Адрес и получатель</label>
+            <input id="f-addr" name="address" class="field h-[50px]" placeholder="Тюмень, ул. Садовая, 14, кв. 27 · Мария" required>
+          </div>
+          <div>
+            <label class="field-label" for="f-comment">Комментарий курьеру</label>
+            <textarea id="f-comment" name="comment" rows="3" class="field min-h-[92px] resize-y py-3 leading-[1.45] placeholder:text-soft" placeholder="Позвоните за 30 минут, код домофона 1452. Подпишите открытку печатными буквами."></textarea>
+          </div>
+        </div>
+
+        <label class="mt-5 flex cursor-pointer items-start gap-2.5 text-[13px] text-[#4a4058]">
+          <input type="checkbox" name="agree" class="peer sr-only" checked>
+          <span class="mt-px grid h-5 w-5 shrink-0 place-items-center rounded-md border border-lav-200 bg-white text-transparent transition peer-checked:border-lav peer-checked:bg-lav peer-checked:text-white peer-focus-visible:ring-4 peer-focus-visible:ring-lav/20"><svg class="h-3.5 w-3.5"><use href="#i-check"/></svg></span>
+          Согласен с политикой обработки персональных данных
+        </label>
+
+        <button type="submit" class="mt-6 inline-flex h-14 w-full items-center justify-center gap-3 rounded-full bg-lav font-display text-[15px] font-semibold text-white transition hover:bg-lav-600">Оформить заказ<svg class="h-[18px] w-[18px]"><use href="#i-arrow"/></svg></button>
+        <p id="orderMsg" class="mt-4 hidden text-center text-[14px]" role="status"></p>
+      </form>
+
+      <!-- Помощь флориста -->
+      <aside class="relative flex flex-col overflow-hidden rounded-[24px] p-6 text-white sm:p-[30px]"
+             style="background: radial-gradient(90% 60% at 0% 100%, #c3a5c7 0%, rgba(195,165,199,0) 70%), linear-gradient(125deg, #7c62a0 0%, #6a5391 45%, #4a3a66 100%);">
+        <svg class="pointer-events-none absolute -right-10 bottom-16 h-[190px] w-[190px] text-white/10 sm:-right-6" viewBox="0 0 200 200" fill="none" aria-hidden="true">
+          <g stroke="currentColor" stroke-width="18">
+            <circle cx="60" cy="60" r="42"/><circle cx="140" cy="60" r="42"/><circle cx="60" cy="140" r="42"/><circle cx="140" cy="140" r="42"/>
+          </g>
+          <g fill="currentColor"><circle cx="100" cy="100" r="18"/><rect x="94" y="52" width="12" height="28" rx="6"/><rect x="94" y="120" width="12" height="28" rx="6"/><rect x="52" y="94" width="28" height="12" rx="6"/><rect x="120" y="94" width="28" height="12" rx="6"/></g>
+        </svg>
+
+        <span class="self-start rounded-full bg-white px-3.5 py-1.5 font-display text-[11px] font-bold text-ink">Помощь флориста</span>
+        <h3 class="mt-4 text-[28px] font-normal leading-tight sm:text-[34px]">Не знаете, что выбрать?</h3>
+        <p class="mt-4 max-w-[470px] text-[15px] leading-[1.6] text-white/75">Расскажите о поводе и бюджете — соберём 2–3 варианта с фото и подскажем, какие цветы простоят дольше.</p>
+
+        <div class="relative mt-10 lg:mt-auto">
+          <div class="flex items-center gap-3.5 rounded-2xl bg-white/10 p-4 backdrop-blur-sm">
+            <span class="grid h-[46px] w-[46px] shrink-0 place-items-center rounded-full bg-gradient-to-br from-white to-lav-100 font-display text-[14px] font-bold text-plum">АС</span>
+            <span>
+              <span class="block font-display text-[15px] font-semibold">Анна Соколова</span>
+              <span class="block text-[12px] text-white/45">старший флорист · на связи с 9:00 до 20:00</span>
+            </span>
+          </div>
+          <button type="button" class="mt-5 inline-flex h-[52px] w-full items-center justify-center gap-3 rounded-full bg-white font-display text-[15px] font-semibold text-ink transition hover:bg-lav-50" data-open="callback" data-title="Звонок флориста"><svg class="h-5 w-5 text-plum"><use href="#i-phone"/></svg>Заказать звонок флориста</button>
+        </div>
+      </aside>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- ============ Подвал ============ -->
+<footer id="footer" class="bg-night text-[#cfc8da]">
+  <div class="container-x pb-10 pt-14 lg:pt-16">
+    <div class="grid gap-10 sm:grid-cols-2 lg:grid-cols-[417px_240px_257px_1fr] lg:gap-0">
+      <div class="sm:col-span-2 lg:col-span-1 lg:pr-12">
+        <a href="#top" class="flex items-center gap-3">
+          <img src="img/logo-mark.png" alt="" class="h-12 w-12 rounded-full">
+          <span class="leading-none">
+            <span class="block font-script text-[30px] leading-[1.1] text-white">Лаванда</span>
+            <span class="mt-0.5 block pl-0.5 text-[10px] tracking-[0.2em] text-white/70">магазин цветов</span>
+          </span>
+        </a>
+        <p class="mt-5 max-w-[320px] text-[14px] leading-[1.65]">Авторские букеты, композиции и подарки с доставкой по Тюмени. Работаем с 2016 года и собираем цветы только в аквапаке.</p>
+        <div class="mt-6 flex gap-2.5">
+          <a href="#" class="grid h-10 w-10 place-items-center rounded-full bg-white/10 text-white transition hover:bg-lav" aria-label="Instagram"><svg class="h-[18px] w-[18px]"><use href="#i-instagram"/></svg></a>
+          <a href="#" class="grid h-10 w-10 place-items-center rounded-full bg-white/10 text-white transition hover:bg-lav" aria-label="Telegram"><svg class="h-[18px] w-[18px]"><use href="#i-telegram"/></svg></a>
+          <a href="#" class="grid h-10 w-10 place-items-center rounded-full bg-white/10 text-white transition hover:bg-lav" aria-label="ВКонтакте"><svg class="h-[18px] w-[18px]"><use href="#i-vk"/></svg></a>
+          <a href="#" class="grid h-10 w-10 place-items-center rounded-full bg-white/10 text-white transition hover:bg-lav" aria-label="WhatsApp"><svg class="h-[18px] w-[18px]"><use href="#i-chat"/></svg></a>
+        </div>
+      </div>
+
+      <div>
+        <h4 class="mb-3 font-display text-[12px] font-bold uppercase tracking-[0.14em] text-white">Каталог</h4>
+        <ul>
+          <li><a href="#catalog" class="foot-link">Букеты</a></li>
+          <li><a href="#boxes" class="foot-link">Композиции в коробках</a></li>
+          <li><a href="#catalog" class="foot-link">Цветы поштучно</a></li>
+          <li><a href="#boxes" class="foot-link">Подарки и открытки</a></li>
+          <li><a href="#catalog" class="foot-link">Свадебная флористика</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h4 class="mb-3 font-display text-[12px] font-bold uppercase tracking-[0.14em] text-white">Помощь</h4>
+        <ul>
+          <li><a href="#why" class="foot-link">Доставка и оплата</a></li>
+          <li><a href="#why" class="foot-link">Гарантия свежести</a></li>
+          <li><a href="#reviews" class="foot-link">Отзывы покупателей</a></li>
+          <li><a href="#order" class="foot-link">Корпоративным клиентам</a></li>
+          <li><a href="#footer" class="foot-link">Вакансии</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h4 class="mb-4 font-display text-[12px] font-bold uppercase tracking-[0.14em] text-white">Контакты</h4>
+        <ul class="space-y-3.5 font-display text-[13px]">
+          <li class="flex items-center gap-3"><svg class="h-4 w-4 shrink-0 text-white"><use href="#i-pin"/></svg>г. Тюмень, ул. Достоевского, 18 этаж 1</li>
+          <li><a href="tel:+79223988968" class="flex items-center gap-3 font-bold text-white"><svg class="h-4 w-4 shrink-0"><use href="#i-phone"/></svg>+7 (922) 398-89-68</a></li>
+          <li><a href="mailto:hello@lavanda-flowers.ru" class="flex items-center gap-3 transition hover:text-white"><svg class="h-4 w-4 shrink-0 text-white"><use href="#i-mail"/></svg>hello@lavanda-flowers.ru</a></li>
+          <li class="flex items-center gap-3"><svg class="h-4 w-4 shrink-0 text-white"><use href="#i-clock"/></svg>Пн-Пт 9:00 – 20:00 / &nbsp;Сб-Вс&nbsp; 10:00 – 19:00</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="mt-12 flex flex-col gap-4 border-t border-white/10 pt-8 font-display text-[13px] text-white/75 lg:mt-11 lg:flex-row lg:items-center lg:justify-between lg:pt-11">
+      <p>© 2026 Магазин цветов «Лаванда». Все права защищены.</p>
+      <nav class="flex flex-wrap gap-x-6 gap-y-2">
+        <a href="#" class="hover:text-white">Политика конфиденциальности</a>
+        <a href="#" class="hover:text-white">Публичная оферта</a>
+        <a href="#" class="hover:text-white">Обработка персональных данных</a>
+      </nav>
+    </div>
+  </div>
+</footer>
+
+<!-- ============ Модальное окно: обратный звонок ============ -->
+<div id="modal" class="fixed inset-0 z-50 hidden items-end justify-center bg-night/60 p-0 backdrop-blur-sm sm:items-center sm:p-4" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+  <div class="w-full max-w-[440px] rounded-t-[24px] bg-white p-6 shadow-card sm:rounded-[24px] sm:p-8">
+    <div class="flex items-start justify-between gap-4">
+      <h3 id="modalTitle" class="text-[24px] leading-tight text-plum">Заказать звонок</h3>
+      <button type="button" class="icon-btn -mr-2 -mt-2 h-10 w-10" data-close aria-label="Закрыть"><svg class="icon"><use href="#i-close"/></svg></button>
+    </div>
+    <p class="mt-2 text-[14px] text-muted">Оставьте телефон — флорист перезвонит в течение 15 минут и поможет с выбором.</p>
+    <form id="callbackForm" class="mt-6 space-y-4" novalidate>
+      <div>
+        <label class="field-label" for="c-name">Как к вам обращаться</label>
+        <input id="c-name" name="name" class="field h-[50px] placeholder:text-soft" placeholder="Анна" autocomplete="name">
+      </div>
+      <div>
+        <label class="field-label" for="c-phone">Телефон</label>
+        <input id="c-phone" name="phone" type="tel" class="field h-[50px] placeholder:text-soft" placeholder="+7 (___) ___-__-__" autocomplete="tel" required>
+      </div>
+      <button type="submit" class="inline-flex h-14 w-full items-center justify-center gap-3 rounded-full bg-lav font-display text-[15px] font-semibold text-white transition hover:bg-lav-600">Жду звонка<svg class="h-[18px] w-[18px]"><use href="#i-arrow"/></svg></button>
+      <p id="callbackMsg" class="hidden text-center text-[14px]" role="status"></p>
+    </form>
+  </div>
+</div>
+
+<!-- Уведомление -->
+<div id="toast" class="pointer-events-none fixed inset-x-4 bottom-4 z-[60] mx-auto max-w-sm translate-y-4 rounded-2xl bg-plum px-5 py-4 text-center text-[14px] text-white opacity-0 shadow-float transition duration-300 sm:bottom-6" role="status" aria-live="polite"></div>
+
+<script src="js/main.js"></script>
+</body>
+</html>

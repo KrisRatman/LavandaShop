@@ -1,0 +1,32 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html { scroll-behavior: smooth; -webkit-tap-highlight-color: transparent; }
+  body { @apply bg-white font-sans text-ink antialiased; }
+  [id] { scroll-margin-top: 96px; }
+}
+
+@layer components {
+  .container-x { @apply mx-auto w-full max-w-container px-4; }
+  .section-title { @apply text-[28px] font-normal leading-tight text-plum sm:text-[36px] lg:text-[44px]; }
+  .section-sub { @apply mt-2 text-[14px] text-muted sm:text-[16px]; }
+  .link-more { @apply inline-flex items-center gap-2 font-display text-[15px] font-semibold text-lav transition hover:text-plum; }
+  .icon { @apply h-5 w-5 shrink-0; }
+  .icon-btn { @apply grid h-[42px] w-[42px] place-items-center rounded-xl bg-lav-50 text-plum transition hover:bg-lav-100; }
+  .btn-cart { @apply grid h-[38px] w-[38px] shrink-0 place-items-center rounded-full bg-lav-100 text-lav transition hover:bg-lav hover:text-white; }
+  .badge { @apply inline-flex h-[27px] items-center rounded-full px-[11px] font-display text-[11px] font-semibold tracking-wide text-white; }
+  .field-label { @apply mb-2 block font-display text-[13px] font-semibold text-[#4a4058]; }
+  .field { @apply block w-full rounded-xl border border-lav-200 bg-white px-4 text-[15px] text-ink outline-none transition placeholder:text-ink focus:border-lav focus:ring-4 focus:ring-lav/15; }
+  .filter-chip { @apply inline-flex h-9 shrink-0 items-center whitespace-nowrap rounded-full border border-lav-200 bg-lav-50 px-5 text-[13px] text-[#4a4058] transition hover:border-lav-400; }
+  .filter-chip.is-active { @apply border-lav bg-lav font-semibold text-white; }
+  .field.is-invalid { @apply border-rose ring-4 ring-rose/15; }
+  .foot-link { @apply text-[14px] leading-8 text-[#cfc8da] transition hover:text-white; }
+}
+
+@layer utilities {
+  .no-scrollbar { scrollbar-width: none; }
+  .no-scrollbar::-webkit-scrollbar { display: none; }
+  .hero-fade { -webkit-mask-image: linear-gradient(to right, transparent 0, #000 12%); mask-image: linear-gradient(to right, transparent 0, #000 12%); }
+}
